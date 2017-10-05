@@ -37,6 +37,10 @@
             value: {
                 type: Date,
                 default: null
+            },
+            placeholder: {
+                type: String,
+                default: 'Date'
             }
         },
         data () {
@@ -44,7 +48,7 @@
                 dates: [],
                 year: 0,
                 month: 0,
-                resultDate: 'Due date',
+                resultDate: this.placeholder,
                 scrollTop: '',
 
                 firstDay: 0,
@@ -170,7 +174,7 @@
         },
         watch: {
             value: function (newValue) {
-                this.resultDate = newValue ? moment(newValue).format(this.dateFormat).toString() : 'Due date'
+                this.resultDate = newValue ? moment(newValue).format(this.dateFormat).toString() : this.placeholder
             }
         }
     }
