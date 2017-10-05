@@ -8,6 +8,7 @@ This datepicker supports changing months by mouse scroll.
 
 ![alt text](example/date01.png)
 ![alt text](example/date02.png)
+
 ![alt text](example/date03.png)
 ![alt text](example/date04.png)
 
@@ -33,7 +34,7 @@ Here is very simple example how to use datepicker:
 
 ```
 4. in your template use your datepicker:
-```
+```HTML
 <date-picker v-model="date" dateFormat="D.M.YYYY" placeholder="Date"></date-picker>
 ```
 
