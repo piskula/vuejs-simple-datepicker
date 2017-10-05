@@ -178,13 +178,16 @@
 
 <style lang="scss">
 
-    @import "../../assets/common";
-
     $elementPx: 26px;
     $elementMargin: 2px;
     $contentWidth: 210px;
     $dropdownPadding: 4px;
     $dropdownWidth: 218px;
+
+    $accent: rgb(10, 118, 215);
+    $accentLighter: rgba(11, 118, 214, 0.05);
+    $greyDarker: rgba(3, 29, 53, 0.70);
+    $greyDarkest: rgba(3, 29, 53, 0.90);
 
     .dropbtn {
         border: none;
