@@ -16,7 +16,9 @@
     "dropdown",
     "scrolling",
     "picker",
-    "calendar"
+    "calendar",
+    "mouse scroll",
+    "mouse"
   ],
   "author": "Ondrej Oravcok <oravcok.ondro@gmail.com> (https://github.com/piskula/)",
   "license": "MIT",
@@ -26,5 +28,8 @@
   "homepage": "https://github.com/piskula/vuejs-simple-datepicker#readme",
   "engines": {
     "node": ">=4.2.4"
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
   }
 }
