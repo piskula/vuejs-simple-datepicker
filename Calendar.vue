@@ -180,18 +180,7 @@
     }
 </script>
 
-<style lang="scss">
-
-    $elementPx: 26px;
-    $elementMargin: 2px;
-    $contentWidth: 210px;
-    $dropdownPadding: 4px;
-    $dropdownWidth: 218px;
-
-    $accent: rgb(10, 118, 215);
-    $accentLighter: rgba(11, 118, 214, 0.05);
-    $greyDarker: rgba(3, 29, 53, 0.70);
-    $greyDarkest: rgba(3, 29, 53, 0.90);
+<style >
 
     .dropbtn {
         border: none;
@@ -200,12 +189,12 @@
         width: 100%;
         height: 100%;
         align-items: center;
-        color: $greyDarker;
+        color: rgba(3, 29, 53, 0.70);
     }
 
     .dropdown {
         position: relative;
-        color: $greyDarkest;
+        color: rgba(3, 29, 53, 0.90);
         font-size: 12px;
         line-height: 14px;
         background: transparent;
@@ -238,11 +227,11 @@
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        width: $dropdownWidth;
+        width: 218px;
         z-index: 5;
         left: 0;
         border-radius: 4px;
-        padding: $dropdownPadding;
+        padding: 4px;
         overflow: auto;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         right: 0;
@@ -252,86 +241,86 @@
     .calendar-header {
         height: 30px;
         display: flex;
-
-        .cal-header-title {
-            width: 140px;
-            margin-left: 10px;
-            align-items: center;
-            display: flex;
-        }
-        .cal-header-buttons {
-            width: 60px;
-            font-family: KM-Iconfont;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-
-            .btn {
-                padding: 0 5px;
-                margin: 0 2px;
-                cursor: pointer;
-            }
-        }
     }
+    .cal-header-title {
+        width: 140px;
+        margin-left: 10px;
+        align-items: center;
+        display: flex;
+    }
+    .cal-header-buttons {
+        width: 60px;
+        font-family: KM-Iconfont;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .btn {
+        padding: 0 5px;
+        margin: 0 2px;
+        cursor: pointer;
+    }
+
+
     .calendar-daysOfWeek {
         display: flex;
         justify-content: space-between;
-        color: $greyDarkest;
-        width: $contentWidth;
-
-        & span {
+        color: rgba(3, 29, 53, 0.90);
+        width: 210px;
+    }
+    .calendar-daysOfWeek span {
             display: block;
             width: 45px;
             line-height: 36px;
             text-align: center;
             font-weight: 500;
         }
-    }
+
 
     .calendar-content {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        width: $contentWidth;
+        width: 210px;
         height: 100%;
-
-        .elem {
-            display: flex;
-            color: inherit;
-            line-height: 36px;
-            width: $elementPx;
-            height: $elementPx;
-            border-radius: 100%;
-            margin: $elementMargin;
-            justify-content: center;
-            align-items: center;
-        }
-
-        & .available {
-            cursor: pointer;
-        }
-        & .available:hover {
-            background-color: $accentLighter;
-        }
-
-        & .prev-next-month {
-            color: #DDD;
-            cursor: default;
-        }
-
-        & .today {
-            color: $accent;
-        }
-
-        & .selected {
-            color: white;
-            background-color: $accent;
-        }
-
-        & .selected:hover {
-            background-color: $accent;
-        }
     }
 
+    .elem {
+        display: flex;
+        color: inherit;
+        line-height: 36px;
+        width: 26px;
+        height: 26px;
+        border-radius: 100%;
+        margin: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .available {
+        cursor: pointer;
+    }
+    .available:hover {
+        background-color: rgba(11, 118, 214, 0.05);
+    }
+
+    .prev-next-month {
+        color: #DDD;
+        cursor: default;
+    }
+
+    .today {
+        color: rgb(10, 118, 215);
+    }
+
+    .selected {
+        color: white;
+        background-color: rgb(10, 118, 215);
+    }
+
+    .selected:hover {
+        background-color: rgb(10, 118, 215);
+    }
 </style>
