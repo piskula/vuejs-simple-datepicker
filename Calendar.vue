@@ -5,8 +5,8 @@
             <div class="calendar-header">
                 <div class="cal-header-title">{{getMonthFormatted}}.{{year}}</div>
                 <div class="cal-header-buttons">
-                    <span class="icon-arrow-up btn" @click="prevMonth()"></span>
-                    <span class="icon-arrow-down btn" @click="nextMonth()"></span>
+                    <span class="calendar-icon icon-arrow-up btn" @click="prevMonth()"></span>
+                    <span class="calendar-icon icon-arrow-down btn" @click="nextMonth()"></span>
                 </div>
             </div>
             <div class="calendar-daysOfWeek">
@@ -182,6 +182,8 @@
 
 <style >
 
+    @import "assets/calendar-font.css";
+
     .dropbtn {
         border: none;
         cursor: pointer;
@@ -250,7 +252,7 @@
     }
     .cal-header-buttons {
         width: 60px;
-        font-family: KM-Iconfont;
+        font-family: calendar-font;
         justify-content: center;
         align-items: center;
         display: flex;
